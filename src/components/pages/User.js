@@ -7,9 +7,9 @@ class AddNew extends Component {
   render() {
     return (
     <div className="todo-context">
-        <Navbar />
         <h1>Nouvel élève</h1>
         <AddNewUser />
+        <Navbar />
     </div>
     )
   }

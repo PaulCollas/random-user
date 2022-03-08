@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# RandomUser
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an school project for Efrei.
+The goal is to build with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

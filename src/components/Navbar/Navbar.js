@@ -37,14 +37,15 @@ export default function Navbar() {
     return (
         <nav>
             {(toggleMenu || largeur > 500) && (
-                <div>
+                <div className="menu">
                     <ul className="liste">
-                        <img src={logo} alt="logo" className='logo'/>
                         <li className="items"><NavLink to="/" className='link'><AiFillHome size={30} style={{ fill: '#137bc0' }}/></NavLink></li>
                         <li className="items"><NavLink to="/likes" className='link'><AiFillHeart size={30} style={{ fill: '#137bc0' }}/></NavLink></li>
+                        <img src={logo} alt="logo" className='logo'/>
                         <li className="items"><NavLink to="/addnew" className='link'><BsFillPersonPlusFill size={30} style={{ fill: '#137bc0' }}/></NavLink></li>
                         <li className="items"><MdDarkMode size={30} style={{ fill: '#137bc0' }}/></li>
                     </ul>  
+
                 </div>
 
 

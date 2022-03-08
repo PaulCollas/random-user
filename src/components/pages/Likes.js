@@ -7,7 +7,6 @@ class Likes extends Component {
   render() {
     return (
     <div className="todo-context">
-        <Navbar />
         <h1>Favoris</h1>
 
         <h3> Voici les élèves favoris:</h3>
@@ -24,7 +23,113 @@ class Likes extends Component {
                     className='edit-icon'
                 />
             </div>
-        </div> 
+        </div>
+        <div className='todo-row'>
+            <div>
+                test
+            </div>
+            <div className='icons'>
+                <RiCloseCircleLine
+                    className='delete-icon'
+                />
+                <TiEdit
+                    className='edit-icon'
+                />
+            </div>
+        </div>
+        <div className='todo-row'>
+            <div>
+                test
+            </div>
+            <div className='icons'>
+                <RiCloseCircleLine
+                    className='delete-icon'
+                />
+                <TiEdit
+                    className='edit-icon'
+                />
+            </div>
+        </div>
+        <div className='todo-row'>
+            <div>
+                test
+            </div>
+            <div className='icons'>
+                <RiCloseCircleLine
+                    className='delete-icon'
+                />
+                <TiEdit
+                    className='edit-icon'
+                />
+            </div>
+        </div>
+        <div className='todo-row'>
+            <div>
+                test
+            </div>
+            <div className='icons'>
+                <RiCloseCircleLine
+                    className='delete-icon'
+                />
+                <TiEdit
+                    className='edit-icon'
+                />
+            </div>
+        </div>
+        <div className='todo-row'>
+            <div>
+                test
+            </div>
+            <div className='icons'>
+                <RiCloseCircleLine
+                    className='delete-icon'
+                />
+                <TiEdit
+                    className='edit-icon'
+                />
+            </div>
+        </div>
+        <div className='todo-row'>
+            <div>
+                test
+            </div>
+            <div className='icons'>
+                <RiCloseCircleLine
+                    className='delete-icon'
+                />
+                <TiEdit
+                    className='edit-icon'
+                />
+            </div>
+        </div>
+        <div className='todo-row'>
+            <div>
+                test
+            </div>
+            <div className='icons'>
+                <RiCloseCircleLine
+                    className='delete-icon'
+                />
+                <TiEdit
+                    className='edit-icon'
+                />
+            </div>
+        </div>
+        <div className='todo-row'>
+            <div>
+                test
+            </div>
+            <div className='icons'>
+                <RiCloseCircleLine
+                    className='delete-icon'
+                />
+                <TiEdit
+                    className='edit-icon'
+                />
+            </div>
+        </div>
+        
+        <Navbar />
     </div>
     )
   }

@@ -8,12 +8,12 @@ class Home extends Component {
     return (
     <div className="todo-context">
         
-        <Navbar />
-
         <h1>Accueil</h1>
 
         <h3> Voici les informations des élèves :</h3>
         <ShowUser />
+
+        <Navbar />
 
     </div>
     )
