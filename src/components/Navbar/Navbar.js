@@ -44,7 +44,7 @@ export default function Navbar() {
 
             )}
 
-            <a onClick={toggleNavSmallScreen} className="btn"> <BiMenuAltRight size={30} style={{ fill: '#137bc0' }}/> </a>
+            <button onClick={toggleNavSmallScreen} className="btn"> <BiMenuAltRight size={30} style={{ fill: '#137bc0' }}/> </button>
         </nav>
     )
 }
