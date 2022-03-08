@@ -5,6 +5,7 @@ import { AiFillHome } from 'react-icons/ai';
 import { AiFillHeart } from 'react-icons/ai';
 import { MdDarkMode } from 'react-icons/md';
 import { BiMenuAltRight } from 'react-icons/bi';
+import logo from '../../assets/logo-efrei.png';
 
 export default function Navbar() {
 
@@ -35,12 +36,15 @@ export default function Navbar() {
     return (
         <nav>
             {(toggleMenu || largeur > 500) && (
+                <div>
+                    <ul className="liste">
+                        <img src={logo} alt="logo" className='logo'/>
+                        <li className="items"><NavLink to="/" className='link'><AiFillHome size={30} style={{ fill: '#137bc0' }}/></NavLink></li>
+                        <li className="items"><NavLink to="/likes" className='link'><AiFillHeart size={30} style={{ fill: '#137bc0' }}/></NavLink></li>
+                        <li className="items"><MdDarkMode size={30} style={{ fill: '#137bc0' }}/></li>
+                    </ul>  
+                </div>
 
-                <ul className="liste">
-                    <li className="items"><NavLink to="/" className='link'><AiFillHome size={30} style={{ fill: '#137bc0' }}/></NavLink></li>
-                    <li className="items"><NavLink to="/likes" className='link'><AiFillHeart size={30} style={{ fill: '#137bc0' }}/></NavLink></li>
-                    <li className="items"><MdDarkMode size={30} style={{ fill: '#137bc0' }}/></li>
-                </ul>  
 
             )}
 

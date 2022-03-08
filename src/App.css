@@ -58,7 +58,7 @@ body::after {
 }
 
 .logo {
-  width: 250px;
+  width: 100px;
 }
 
 h1 {
@@ -149,12 +149,12 @@ h1 {
 }
 
 .delete-icon:hover,
-.edit-icon:hover {
+.like-icon:hover {
   font-size: larger;
   color:#a882f3;
 }
 
-.edit-icon {
+.like-icon {
   color: #fff;
 }
 
