@@ -37,14 +37,14 @@ export default function Navbar() {
             {(toggleMenu || largeur > 500) && (
 
                 <ul className="liste">
-                    <li className="items"><NavLink to="/" className='link'><AiFillHome size={30} style={{ fill: 'black' }}/></NavLink></li>
-                    <li className="items"><NavLink to="/likes" className='link'><AiFillHeart size={30} style={{ fill: 'black' }}/></NavLink></li>
-                    <li className="items"><MdDarkMode size={30} style={{ fill: 'black' }}/></li>
+                    <li className="items"><NavLink to="/" className='link'><AiFillHome size={30} style={{ fill: '#137bc0' }}/></NavLink></li>
+                    <li className="items"><NavLink to="/likes" className='link'><AiFillHeart size={30} style={{ fill: '#137bc0' }}/></NavLink></li>
+                    <li className="items"><MdDarkMode size={30} style={{ fill: '#137bc0' }}/></li>
                 </ul>  
 
             )}
 
-            <a onClick={toggleNavSmallScreen} className="btn"> <BiMenuAltRight size={30} style={{ fill: 'black' }}/> </a>
+            <a onClick={toggleNavSmallScreen} className="btn"> <BiMenuAltRight size={30} style={{ fill: '#137bc0' }}/> </a>
         </nav>
     )
 }

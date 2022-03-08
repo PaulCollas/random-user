@@ -1,14 +1,24 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Likes from './components/pages/Likes'
-import Home from './components/pages/Home'
+import Likes from './components/pages/Likes';
+import Home from './components/pages/Home';
+import { createContext } from "react";
+
+export const themes = {
+  dark: "",
+  light: "white-content",
+};
+
+export const ThemeContext = createContext({
+    theme: themes.dark,
+  changeTheme: () => {},
+});
 
 function App() {
   return (
-    <div className="App">
+    <div className="todo-app">
       <BrowserRouter>
-        <Navbar />
+        
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/likes' element={<Likes/>} />
