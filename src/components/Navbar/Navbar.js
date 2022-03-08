@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import "./Navbar.css"
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
 
@@ -32,8 +33,8 @@ export default function Navbar() {
             {(toggleMenu || largeur > 500) && (
 
                 <ul className="liste">
-                    <li className="items">Accueil</li>
-                    <li className="items">Favoris</li>
+                    <li className="items"><NavLink to="/">Accueil</NavLink></li>
+                    <li className="items"><NavLink to="/likes">Favoris</NavLink></li>
                     <li className="items">Dark mode</li>
                 </ul>  
 
