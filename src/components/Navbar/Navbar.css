@@ -1,0 +1,48 @@
+nav {
+    height: 50px;
+    background-color: #fff;
+}
+.liste {
+    list-style-type: none;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.items {
+    margin-right: 10px;
+    color: #000;
+    cursor: pointer;
+}
+.btn {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .liste {
+        flex-direction: column;
+        height: 200px;
+    }
+    .items:nth-child(1) {
+        border-top: 1px solid #000;
+        margin-top: 50px;
+    }
+    .items {
+        height: 50px;
+        width: 100%;
+        border-bottom: 1 solid #000;
+        line-height: 50px;
+    }
+    .btn {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #000;
+        cursor: pointer;
+    }
+}
