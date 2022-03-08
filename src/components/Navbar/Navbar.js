@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from "react";
 import "./Navbar.css"
 import { NavLink } from "react-router-dom";
+import { AiFillHome } from 'react-icons/ai';
+import { AiFillHeart } from 'react-icons/ai';
+import { MdDarkMode } from 'react-icons/md';
+import { BiMenuAltRight } from 'react-icons/bi';
 
 export default function Navbar() {
 
@@ -33,14 +37,14 @@ export default function Navbar() {
             {(toggleMenu || largeur > 500) && (
 
                 <ul className="liste">
-                    <li className="items"><NavLink to="/">Accueil</NavLink></li>
-                    <li className="items"><NavLink to="/likes">Favoris</NavLink></li>
-                    <li className="items">Dark mode</li>
+                    <li className="items"><NavLink to="/" className='link'><AiFillHome size={30} style={{ fill: 'black' }}/></NavLink></li>
+                    <li className="items"><NavLink to="/likes" className='link'><AiFillHeart size={30} style={{ fill: 'black' }}/></NavLink></li>
+                    <li className="items"><MdDarkMode size={30} style={{ fill: 'black' }}/></li>
                 </ul>  
 
             )}
 
-            <button onClick={toggleNavSmallScreen} className="btn"> BTN </button>
+            <a onClick={toggleNavSmallScreen} className="btn"> <BiMenuAltRight size={30} style={{ fill: 'black' }}/> </a>
         </nav>
     )
 }

@@ -17,6 +17,11 @@ nav {
     margin-right: 10px;
     color: #000;
     cursor: pointer;
+    width: 150px;
+    
+}
+.link {
+    text-decoration: none;
 }
 .btn {
     display: none;

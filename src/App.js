@@ -8,11 +8,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/likes' element={<Likes/>} />
         </Routes>
-        <Navbar />
+        
       </BrowserRouter>
     </div>
   );
