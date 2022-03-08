@@ -8,12 +8,12 @@ import { AiFillPhone } from 'react-icons/ai';
 import DeleteUser from './DeleteUser';
 import axios from 'axios';
 
+
 class ShowUser extends Component {
 
     state = {
         persons: []
     }
-
     
     componentDidMount() {
         axios.get(`https://jsonplaceholder.typicode.com/users`)
