@@ -9,10 +9,6 @@ class Likes extends Component {
     <div className="todo-context">
         <Navbar />
         <h1>Favoris</h1>
-        {/* <form className="todo-form">
-            <input type="text" placeholder="Update your item" name="text" className="todo-input edit" />
-            <button className="todo-button edit">Mettre à jour</button>
-        </form > */}
 
         <h3> Voici les élèves favoris:</h3>
 

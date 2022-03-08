@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Likes from './components/pages/Likes';
 import Home from './components/pages/Home';
-import AddNew from './components/pages/AddNewPerson';
+import AddNew from './components/pages/User';
 
 function App() {
   return (
