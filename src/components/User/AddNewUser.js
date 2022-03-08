@@ -25,7 +25,6 @@ class AddNew extends Component {
 
     axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
       .then(res => {
-        setPost(response.data)
         console.log(res);
         console.log(res.data);
       })
