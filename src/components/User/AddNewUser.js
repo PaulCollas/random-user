@@ -33,11 +33,11 @@ class AddNew extends Component {
   render() {
     return (
     <div>
-        <form className="todo-form" onSubmit={this.handleSubmit}>
-            <input type="text" placeholder="Nom" name="text" className="todo-input edit" onChange={this.handleChange}/>
-            <input type="text" placeholder="Email" name="text" className="todo-input edit" onChange={this.handleChange}/>
-            <input type="text" placeholder="Télephone" name="text" className="todo-input edit" onChange={this.handleChange}/>
-            <button className="todo-button edit" type="submit">Ajouter</button>
+        <form className="randomuser-form" onSubmit={this.handleSubmit}>
+            <input type="text" placeholder="Nom" name="text" className="randomuser-input edit" onChange={this.handleChange}/>
+            <input type="text" placeholder="Email" name="text" className="randomuser-input edit" onChange={this.handleChange}/>
+            <input type="text" placeholder="Télephone" name="text" className="randomuser-input edit" onChange={this.handleChange}/>
+            <button className="randomuser-button edit" type="submit">Ajouter</button>
         </form >
     </div>
     )

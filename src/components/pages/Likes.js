@@ -6,12 +6,12 @@ import { TiEdit } from 'react-icons/ti';
 class Likes extends Component {
   render() {
     return (
-    <div className="todo-context">
+    <div className="randomuser-context">
         <h1>Favoris</h1>
 
         <h3> Voici les élèves favoris:</h3>
 
-        <div className='todo-row'>
+        <div className='randomuser-row'>
             <div>
                 test
             </div>

@@ -15,11 +15,10 @@ The goal is to build with [Create React App](https://github.com/facebook/create-
 * Application will be invoked by using the following command:
     `npm start`
 
-* Users can add a todo and stored in localStorage
+* Users can add a user and stored in localStorage
 
-* Update existing todos
 
-* And delete when todo is completed
+* And delete user 
 
 * Application will be build by using the following command:
     `npm build`
@@ -41,8 +40,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 This project has deployed here: [link](https://random-user-pc.netlify.app/)
 ## ⌨ License
-
-  Copyright (c) Mengmei Tu. All rights reserved.
   
   Licensed under the [MIT](LICENSE) license.
 

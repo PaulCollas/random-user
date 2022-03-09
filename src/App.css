@@ -36,7 +36,7 @@ body::after {
   clip-path: circle(30% at 10% 10%);
 }
 
-.todo-app {
+.randomuser-app {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -75,11 +75,11 @@ h1 {
   opacity: 0.4;
 }
 
-.todo-form {
+.randomuser-form {
   margin-bottom: 32px;
 }
 
-.todo-input {
+.randomuser-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
   border: 2px solid #137bc0;
@@ -90,11 +90,11 @@ h1 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.todo-input::placeholder {
+.randomuser-input::placeholder {
   color: #137bc0;
 }
 
-.todo-button {
+.randomuser-button {
   padding: 16px;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -105,26 +105,26 @@ h1 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.todo-button:hover {
+.randomuser-button:hover {
   text-transform: uppercase;
 }
 
-.todo-input.edit {
+.randomuser-input.edit {
   border: 2px solid #149fff;
 }
 
-.todo-button.edit {
+.randomuser-button.edit {
   background-color: #137bc0;
   padding: 16px 22px;
 }
 
-.todo-container {
+.randomuser-container {
   display: flex;
   flex-direction: row;
   position: relative;
 }
 
-.todo-row {
+.randomuser-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,25 +165,25 @@ h1 {
 }
 
 @media (min-width: 320px) and (max-width: 650px) {
-  .todo-app {
+  .randomuser-app {
     margin: 0;
     height: 100vh;
     width: 100vw;
   }
 
-  .todo-context {
+  .randomuser-context {
     width: 80vw;
   }
 
-  .todo-input {
+  .randomuser-input {
     width: 215px;
   }
 
-  .todo-row {
+  .randomuser-row {
     width: 80%;
   }
 
-  .todo-button:hover {
+  .randomuser-button:hover {
     text-transform: none;
   }
 }

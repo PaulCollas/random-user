@@ -28,7 +28,7 @@ class ShowUser extends Component {
     <div>
         {
             this.state.persons.map(person => 
-                <div className='todo-row'>
+                <div className='randomuser-row'>
                     <div>
                         <p>
                             <span className='items-list'>

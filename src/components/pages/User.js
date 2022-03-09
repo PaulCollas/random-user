@@ -6,7 +6,7 @@ class AddNew extends Component {
 
   render() {
     return (
-    <div className="todo-context">
+    <div className="randomuser-context">
         <h1>Nouvel élève</h1>
         <AddNewUser />
         <Navbar />

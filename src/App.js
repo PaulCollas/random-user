@@ -6,7 +6,7 @@ import AddNew from './components/pages/User';
 
 function App() {
   return (
-    <div className="todo-app">
+    <div className="randomuser-app">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
