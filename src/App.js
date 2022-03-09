@@ -9,7 +9,6 @@ function App() {
     <div className="randomuser-app">
       <BrowserRouter>
         <Routes>
-
           {/* Définition des routes pour la navigation */}
           <Route path='/' element={<Home/>} />
           <Route path='/likes' element={<Likes/>} />
