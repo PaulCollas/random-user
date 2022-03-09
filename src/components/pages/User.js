@@ -6,7 +6,7 @@ class AddNew extends Component {
 
   render() {
     return (
-    <div className="randomuser-context">
+    <div className="context">
         <h1>Nouvel élève</h1>
 
         {/* Rappel du composant ShowUser (avec le form sur de l'Api) */}
