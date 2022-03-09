@@ -12,14 +12,14 @@ import axios from 'axios';
 class ShowUser extends Component {
 
     state = {
-        persons: []
+        users: []
     }
     
     componentDidMount() {
         axios.get(`https://jsonplaceholder.typicode.com/users`)
           .then(res => {
-            const persons = res.data;
-            this.setState({ persons });
+            const users = res.data;
+            this.setState({ users });
           })
     }
 
@@ -27,18 +27,18 @@ class ShowUser extends Component {
     return (
     <div>
         {
-            this.state.persons.map(person => 
+            this.state.users.map(user => 
                 <div className='randomuser-row'>
                     <div>
                         <p>
                             <span className='items-list'>
-                            <BsFillPersonFill className='delete-icon'/> {person.name} 
+                            <BsFillPersonFill className='delete-icon'/> {user.name} 
                             </span>
                             <span className='items-list'>
-                            <MdOutlineLocationCity className='delete-icon'/> {person.email} 
+                            <MdOutlineLocationCity className='delete-icon'/> {user.email} 
                             </span>
                             <span className='items-list'>
-                            <AiFillPhone className='delete-icon'/> {person.phone} 
+                            <AiFillPhone className='delete-icon'/> {user.phone} 
                             </span>
                         </p> 
 

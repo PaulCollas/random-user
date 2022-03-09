@@ -1,47 +1,39 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import axios from "axios";
+import React from "react";
 
-class AddNew extends Component {
-  state = {
-    name: '',
-    email: '',
-    phone: '',
-  }
+const baseURL = "https://jsonplaceholder.typicode.com/users";
 
-  handleChange = event => {
-    this.setState({ name: event.target.value });
-    this.setState({ email: event.target.value });
-    this.setState({ phone: event.target.value });
-  }
+export default function AddNewUser() {
+  const [user, setUser] = React.useState(null);
 
-  handleSubmit = event => {
-    event.preventDefault();
+  React.useEffect(() => {
+    axios.get(`${baseURL}/`).then((response) => {
+      setUser(response.data);
+    });
+  }, []);
 
-    const user = {
-      name: this.state.name,
-      email: this.state.email,
-      phone: this.state.phone
-    };
-
-    axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
+  function createUser() {
+    axios
+      .post(baseURL, {
+        name: user.name,
+        email: user.email,
+        phone: user.phone
       })
+      .then((response) => {
+        setUser(response.data);
+      });
   }
 
-  render() {
-    return (
+  if (!user) return "Problème lors de l'ajout de l'utilisateur"
+
+  return (
     <div>
-        <form className="randomuser-form" onSubmit={this.handleSubmit}>
-            <input type="text" placeholder="Nom" name="text" className="randomuser-input edit" onChange={this.handleChange}/>
-            <input type="text" placeholder="Email" name="text" className="randomuser-input edit" onChange={this.handleChange}/>
-            <input type="text" placeholder="Télephone" name="text" className="randomuser-input edit" onChange={this.handleChange}/>
-            <button className="randomuser-button edit" type="submit">Ajouter</button>
+        <form className="randomuser-form">
+            <input type="text" placeholder="Nom" name="text" className="randomuser-input edit" value={user.name} />
+            <input type="text" placeholder="Email" name="text" className="randomuser-input edit" value={user.email} />
+            <input type="text" placeholder="Télephone" name="text" className="randomuser-input edit" value={user.phone}/>
+            <button className="randomuser-button edit" type="submit" onClick={createUser}>Ajouter</button>
         </form >
     </div>
-    )
-  }
+  );
 }
-
-export default AddNew;
