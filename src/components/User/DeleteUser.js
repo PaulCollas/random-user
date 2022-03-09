@@ -23,7 +23,7 @@ export default class PersonList extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <button type="submit" onClick={this.handleChange}><RiCloseCircleLine className='delete-icon' /></button>
+          <button type="submit" onClick={this.handleChange}><RiCloseCircleLine className='icon-randomuser' /></button>
         </form>
       </div>
     )

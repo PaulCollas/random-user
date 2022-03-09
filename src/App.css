@@ -149,12 +149,12 @@ h1 {
   cursor: pointer;
 }
 
-.delete-icon {
+.icon-randomuser {
   margin-right: 5px;
   color: #fff;
 }
 
-.delete-icon:hover,
+.icon-randomuser:hover,
 .like-icon:hover {
   font-size: larger;
   color:#a882f3;

@@ -32,13 +32,13 @@ class ShowUser extends Component {
                     <div>
                         <p>
                             <span className='items-list'>
-                            <BsFillPersonFill className='delete-icon'/> {user.name} 
+                            <BsFillPersonFill className='icon-randomuser'/> {user.name} 
                             </span>
                             <span className='items-list'>
-                            <MdOutlineLocationCity className='delete-icon'/> {user.email} 
+                            <MdOutlineLocationCity className='icon-randomuser'/> {user.email} 
                             </span>
                             <span className='items-list'>
-                            <AiFillPhone className='delete-icon'/> {user.phone} 
+                            <AiFillPhone className='icon-randomuser'/> {user.phone} 
                             </span>
                         </p> 
 
