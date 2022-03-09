@@ -25,10 +25,25 @@ The goal is to build with [Create React App](https://github.com/facebook/create-
 
 ## 🎉Features
 
-* JavaScript
-* Node
-* React
-* localStorage
+- Affichage des (d’un) element(s) random via l’api ✅
+
+- Enregistrer & Supprimer les elements dans le localStorage
+
+- Navigation vers la page Favoris ✅
+
+- Affichage des éléments Favoris
+
+- Mode Sombre ✅ ( en Utilisant Context ) 
+
+- Installation d’un Package de votre choix ✅ (react-icons)
+
+- Design ✅
+
+- Responsive ✅
+
+- Propreté du Code 
+
+- Déploiement ✅
 
 ## 🎩Sources
 
