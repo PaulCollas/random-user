@@ -12,23 +12,26 @@ import { ThemeProvider } from 'styled-components';
 
 export default function Navbar() {
 
+    
+    // Définition des ToggleMenu et de la largeur de l'écran
     const [toggleMenu, setToggleMenu] = useState(false);
     const [largeur, setLargeur] = useState(window.innerWidth);
 
+    // Définition du theme
     const [theme, setTheme] = useState(true);
+
+    // Définition des couleurs des themes
 	const lightTheme = { body: '#FFF', text: '#363537' };
 	const darkTheme = { body: '#363537', text: '#FAFAFA' };
 
-  console.log(theme);
-
-    {/* Switcher entre les menus */}
+    // Switcher entre les menus
     const toggleNavSmallScreen = () => {
         setToggleMenu(!toggleMenu);
     }
 
     useEffect(() => {
 
-        {/* Sélection du changement de la taille d'écran */}
+        // Sélection du changement de la taille d'écran 
         const changeWidth = () => {
             setLargeur(window.innerWidth);
 
@@ -44,11 +47,12 @@ export default function Navbar() {
         }
     }, [])
 
+    // Si la condition est vrai alors on affiche la navigation...
+    // ... sinon on affiche le menu hamburger
     return (
         <ThemeProvider theme={theme ? lightTheme : darkTheme}>
             <GlobalStyles />
             <nav>
-                {/* Si la condition est vrai alors on affiche la navigation... */}
                 {(toggleMenu || largeur > 500) && (
                     <div className="menu">
                         <ul className="liste">
@@ -63,7 +67,6 @@ export default function Navbar() {
 
 
                 )}
-                {/* ... sinon on affiche le menu hamburger */}
                 <button onClick={toggleNavSmallScreen} className="btn"> <BiMenuAltRight size={30} style={{ fill: '#137bc0' }}/> </button>
             </nav>            
         </ThemeProvider>
