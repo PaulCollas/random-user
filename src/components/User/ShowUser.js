@@ -4,8 +4,8 @@ import { AiFillHeart } from 'react-icons/ai';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { MdOutlineLocationCity } from 'react-icons/md';
 import { AiFillPhone } from 'react-icons/ai';
-
-import DeleteUser from './DeleteUser';
+import { RiCloseCircleLine } from 'react-icons/ri';
+// import DeleteUser from './DeleteUser';
 import axios from 'axios';
 
 
@@ -21,6 +21,21 @@ class ShowUser extends Component {
             const users = res.data;
             this.setState({ users });
           })
+    }
+
+    // For setState for delete user
+    handleChange = user => {
+        this.setState({ id: user.id });
+    }
+    
+    // Submit for request delete user
+    handleSubmit = user => {
+    user.preventDefault();
+
+        axios.delete(`https://jsonplaceholder.typicode.com/users/${this.user.id}`)
+            .then(() => this.setState({ status: 'Delete successful' }));
+
+        console.log(axios.delete(`https://jsonplaceholder.typicode.com/users/${this.user.id}`))
     }
 
     render() {
@@ -44,8 +59,10 @@ class ShowUser extends Component {
 
                     </div>
                     <div className='icons'>
-                        <DeleteUser />
-                        <AiFillHeart className='like-icon' />
+                    <form onSubmit={this.handleSubmit}>
+                        <button type="submit" onClick={this.handleChange}><RiCloseCircleLine className='icon-randomuser' /></button>
+                    </form>
+                        <AiFillHeart className='like-icon'/>
                     </div>
                 </div> 
             )
