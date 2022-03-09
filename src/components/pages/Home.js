@@ -11,8 +11,11 @@ class Home extends Component {
         <h1>Accueil</h1>
 
         <h3> Voici les informations des élèves :</h3>
+
+        {/* Rappel du composant ShowUser (avec l'utilsiation de l'Api) */}
         <ShowUser />
 
+        {/*  Rappel de la Navbar  */}
         <Navbar />
 
     </div>

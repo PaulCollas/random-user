@@ -8,7 +8,11 @@ class AddNew extends Component {
     return (
     <div className="randomuser-context">
         <h1>Nouvel élève</h1>
+
+        {/* Rappel du composant ShowUser (avec le form sur de l'Api) */}
         <AddNewUser />
+        
+        {/*  Rappel de la Navbar  */}
         <Navbar />
     </div>
     )

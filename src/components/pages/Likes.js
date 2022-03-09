@@ -25,6 +25,7 @@ class Likes extends Component {
             </div>
         </div>
         
+        {/*  Rappel de la Navbar  */}
         <Navbar />
     </div>
     )

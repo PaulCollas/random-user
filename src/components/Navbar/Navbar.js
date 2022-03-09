@@ -13,12 +13,14 @@ export default function Navbar() {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [largeur, setLargeur] = useState(window.innerWidth)
 
+    {/* Switcher entre les menus */}
     const toggleNavSmallScreen = () => {
         setToggleMenu(!toggleMenu);
     }
 
     useEffect(() => {
 
+        {/* Sélection du changement de la taille d'écran */}
         const changeWidth = () => {
             setLargeur(window.innerWidth);
 
@@ -36,6 +38,7 @@ export default function Navbar() {
 
     return (
         <nav>
+            {/* Si la condition est vrai alors on affiche la navigation... */}
             {(toggleMenu || largeur > 500) && (
                 <div className="menu">
                     <ul className="liste">
@@ -50,7 +53,7 @@ export default function Navbar() {
 
 
             )}
-
+            {/* ... sinon on affiche le menu hamburger */}
             <button onClick={toggleNavSmallScreen} className="btn"> <BiMenuAltRight size={30} style={{ fill: '#137bc0' }}/> </button>
         </nav>
     )
